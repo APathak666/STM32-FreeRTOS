@@ -364,8 +364,7 @@ void publisher1(void* pv)
 {
 	message send;
 	send.pubHandle = xTaskHandlePub1;
-	strcpy(send.payload, "Yo mama homo\n\r");
-//	send.payload = "Yo mama homo\n\r";
+	strcpy(send.payload, "Test send to queue\n\r");
 
 	while(1)
 	{
